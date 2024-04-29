@@ -49,6 +49,7 @@ def register_api_view(request):
     serializer.save()
     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
+
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def my_profil_api_view(request):
